@@ -1,4 +1,5 @@
-# SIEM Alert Investigation
+# SIEM Alert Investigations
+## Case 1: Port Scanning Activity (False Positive)
 
 ## Overview
 
@@ -88,3 +89,66 @@ The screenshot below shows the SIEM alert triggered by detected port scanning ac
 ### Log Analysis
 The screenshot below shows log evidence of multiple connection attempts across different ports from the same source IP
 ![Logs] <img width="884" height="646" alt="Screenshot 2026-04-02 014330" src="https://github.com/user-attachments/assets/5f8cc5c6-7df8-4056-aa21-76b70da1ed81" />
+
+
+
+## Case 2: CryptoMiner Activity (True Positive)
+
+### Alert Summary
+- Alert Type: Potential CryptoMiner Activity
+- Severity: Medium/High
+- Source: Internal host activity
+- Host: HR_02
+- User: chris
+
+### Investigation Process
+
+#### 1. Alert Review
+A SIEM alert was triggered indicating potential cryptomining activity based on predefined detection rules.
+
+#### 2. Log Analysis
+Reviewing the event logs showed a suspicious process execution:
+- Process Name: cudominer.exe
+- File Path: C:\Users\chris\temp\cudominer.exe
+
+#### 3. Rule Analysis
+The alert was triggered based on:
+- Event ID: 4688 (process creation)
+- Condition: Process name contains "miner" or "crypt"
+
+#### 4. Source Identification
+- User: chris
+- Host: HR_02
+
+### Findings
+- Malicious process detected: cudominer.exe
+- Executed from temp directory
+- Matches cryptomining behavior
+
+### Outcome
+- Classification: True Positive
+- Action Taken: Host should be isolated
+
+### Key Takeaways
+- Process names are strong indicators
+- SIEM rules help detect threats
+- True positives require immediate action
+
+### Evidence
+
+### SIEM Alert 
+The screenshot below shows SIEM alert triggered by cryptomining activity 
+<img width="773" height="700" alt="Screenshot 2026-04-02 021356" src="https://github.com/user-attachments/assets/6ef178b9-9013-4fee-99e3-4b56a19b57af" />
+
+### SIEM Event Logs
+<img width="796" height="576" alt="Screenshot 2026-04-02 021432" src="https://github.com/user-attachments/assets/4c161c1f-ba65-487e-9f07-8e94cabb0baa" />
+
+### RULE 
+The screenshot below shows why SIEM alert triggered based this rule
+<img width="757" height="431" alt="Screenshot 2026-04-02 021556" src="https://github.com/user-attachments/assets/aef31658-82e9-48c4-8555-b532658e1973" />
+
+### RESPONSE
+<img width="737" height="410" alt="Screenshot 2026-04-02 021633" src="https://github.com/user-attachments/assets/effd51b4-c2c6-44f0-888d-db914089cecf" />
+
+
+

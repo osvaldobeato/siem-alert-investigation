@@ -87,13 +87,13 @@ The SOC team had prior knowledge that a vulnerability assessment was being condu
 
 ### SIEM Alert
 The screenshot below shows the SIEM alert triggered by detected port scanning activity
-![SIEM Alert] <img width="918" height="663" alt="case1-siem-alert" src="https://github.com/user-attachments/assets/afadf2d7-011f-47e5-bafe-06cac76561b6" />
+<img width="918" height="663" alt="case1-siem-alert" src="https://github.com/user-attachments/assets/afadf2d7-011f-47e5-bafe-06cac76561b6" />
 
 
 
 ### Log Analysis
 The screenshot below shows log evidence of multiple connection attempts across different ports from the same source IP
-![Logs] <img width="884" height="646" alt="case1-log-analysis" src="https://github.com/user-attachments/assets/34c68a49-62dc-4a25-93db-8162f3edb5b3" />
+<img width="884" height="646" alt="case1-log-analysis" src="https://github.com/user-attachments/assets/34c68a49-62dc-4a25-93db-8162f3edb5b3" />
 
 
 
@@ -146,17 +146,21 @@ The alert was triggered based on:
 
 ### SIEM Alert 
 The screenshot below shows SIEM alert triggered by cryptomining activity 
-<img width="773" height="700" alt="Screenshot 2026-04-02 021356" src="https://github.com/user-attachments/assets/6ef178b9-9013-4fee-99e3-4b56a19b57af" />
+<img width="773" height="700" alt="case2-siem-alert" src="https://github.com/user-attachments/assets/def524f9-53ca-44de-9de6-feb477d4f3e4" />
+
 
 ### SIEM Event Logs
-<img width="796" height="576" alt="Screenshot 2026-04-02 021432" src="https://github.com/user-attachments/assets/4c161c1f-ba65-487e-9f07-8e94cabb0baa" />
+<img width="796" height="576" alt="case2-event-logs" src="https://github.com/user-attachments/assets/5aab59f8-1314-45de-98bd-2be8acfa77a9" />
+
 
 ### RULE 
 The screenshot below shows why SIEM alert triggered based this rule
-<img width="757" height="431" alt="Screenshot 2026-04-02 021556" src="https://github.com/user-attachments/assets/aef31658-82e9-48c4-8555-b532658e1973" />
+<img width="757" height="431" alt="case2-rule" src="https://github.com/user-attachments/assets/41ee018d-d1a6-4cc1-a510-bb84fc793e03" />
+
 
 ### RESPONSE
-<img width="737" height="410" alt="Screenshot 2026-04-02 021633" src="https://github.com/user-attachments/assets/effd51b4-c2c6-44f0-888d-db914089cecf" />
+<img width="737" height="410" alt="case2-response" src="https://github.com/user-attachments/assets/7524fa9d-6959-45a9-821d-42df17db3c2a" />
+
 
 
 
